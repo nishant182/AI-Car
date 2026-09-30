@@ -1,0 +1,2322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Vehicle Service</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <span class="logo-icon">🚗</span>
+            <span>AI Vehicle Service</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#services">Services</a>
+            <a href="#service-centers">Service Centers</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="nav-buttons">
+
+            <button class="login-btn" onclick="openLogin()">
+                Login
+            </button>
+
+            <button class="register-btn" onclick="openRegister()">
+                Register
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    ✨ AI-Powered Vehicle Care
+                </div>
+
+                <h1>
+                    Smarter Care
+                    <br>
+                    for Your
+                    <span>Vehicle</span>
+                </h1>
+
+                <p>
+                    AI-powered vehicle health monitoring,
+                    predictive maintenance and hassle-free
+                    service booking — all in one place.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button
+                        class="primary-btn"
+                        onclick="getStarted()"
+                    >
+                        Get Started
+                        <span>→</span>
+                    </button>
+
+                    <button
+                        class="secondary-btn"
+                        onclick="learnMore()"
+                    >
+                        Learn More
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= HERO FEATURES ================= -->
+
+            <div class="hero-features">
+
+                <div class="hero-feature">
+
+                    <div class="feature-circle">
+                        ♥
+                    </div>
+
+                    <div>
+                        <h3>Vehicle Health</h3>
+                        <p>Analysis</p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-divider"></div>
+
+
+                <div class="hero-feature">
+
+                    <div class="feature-circle">
+                        ◉
+                    </div>
+
+                    <div>
+                        <h3>Predictive</h3>
+                        <p>Maintenance</p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-divider"></div>
+
+
+                <div class="hero-feature">
+
+                    <div class="feature-circle">
+                        ◇
+                    </div>
+
+                    <div>
+                        <h3>AI Damage</h3>
+                        <p>Detection</p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-divider"></div>
+
+
+                <div class="hero-feature">
+
+                    <div class="feature-circle">
+                        🔧
+                    </div>
+
+                    <div>
+                        <h3>Service Center</h3>
+                        <p>Booking</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="drive-text">
+                Drive Better
+                <br>
+                <span>With AI</span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICES ================= -->
+
+        <section class="services-section" id="services">
+
+            <div class="section-heading">
+
+                <span>SMART VEHICLE SERVICES</span>
+
+                <h2>
+                    Everything Your Vehicle Needs
+                </h2>
+
+                <p>
+                    Intelligent tools designed to make
+                    vehicle maintenance simple and smarter.
+                </p>
+
+            </div>
+
+
+            <div class="service-grid">
+
+                <!-- ================= VEHICLE HEALTH ================= -->
+
+                <div class="service-card">
+
+                    <div class="service-icon health-icon">
+                        ♥
+                    </div>
+
+                    <h3>Vehicle Health</h3>
+
+                    <p>
+                        Monitor your vehicle health using
+                        intelligent data analysis.
+                    </p>
+
+                    <button onclick="openHealthCheck()">
+                        Explore →
+                    </button>
+
+                </div>
+
+
+                <!-- ================= PREDICTIVE MAINTENANCE ================= -->
+
+                <div class="service-card">
+
+                    <div class="service-icon maintenance-icon">
+                        ◉
+                    </div>
+
+                    <h3>Predictive Maintenance</h3>
+
+                    <p>
+                        Get smart maintenance recommendations
+                        before problems become serious.
+                    </p>
+
+                    <button onclick="openMaintenanceCheck()">
+                         Explore →
+                    </button>
+
+                </div>
+
+
+                <!-- ================= AI DAMAGE DETECTION ================= -->
+
+                <div class="service-card">
+
+                    <div class="service-icon damage-icon">
+                        ◇
+                    </div>
+
+                    <h3>AI Damage Detection</h3>
+
+                    <p>
+                        Upload vehicle images and get
+                        AI-assisted damage analysis.
+                    </p>
+
+                    <button onclick="openDamageDetection()">
+                        Explore →
+                    </button>
+
+                </div>
+
+
+                <!-- ================= SERVICE BOOKING ================= -->
+
+                <div class="service-card">
+
+                    <div class="service-icon booking-icon">
+                        🔧
+                    </div>
+
+                    <h3>Service Booking</h3>
+
+                    <p>
+                        Find service centers and book
+                        vehicle services easily.
+                    </p>
+
+                    <button onclick="openServiceBooking()">
+                        Book Now →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about-section" id="about">
+
+            <div class="about-content">
+
+                <span>ABOUT OUR PLATFORM</span>
+
+                <h2>
+                    Your Vehicle's
+                    <strong>AI Care Partner</strong>
+                </h2>
+
+                <p>
+                    AI Vehicle Service combines artificial
+                    intelligence, predictive maintenance and
+                    digital service management to simplify
+                    vehicle ownership.
+                </p>
+
+                <div class="about-points">
+
+                    <div>
+                        ✓ Smart vehicle monitoring
+                    </div>
+
+                    <div>
+                        ✓ AI-powered recommendations
+                    </div>
+
+                    <div>
+                        ✓ Predictive maintenance
+                    </div>
+
+                    <div>
+                        ✓ Complete service history
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SERVICE CENTER ================= -->
+
+        <section
+            class="service-center-section"
+            id="service-centers"
+        >
+
+            <div class="section-heading">
+
+                <span>SERVICE CENTERS</span>
+
+                <h2>
+                    Find a Service Center
+                </h2>
+
+                <p>
+                    Find suitable vehicle service centers
+                    and book your service appointment.
+                </p>
+
+            </div>
+
+
+            <div class="center-placeholder">
+
+                <div class="location-icon">
+                    📍
+                </div>
+
+                <h3>
+                    Nearby Service Centers
+                </h3>
+
+                <p>
+                    Service center discovery will be
+                    connected in the next development phase.
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="openServiceCenters(event)">
+                    Find a Service Center →
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🚗 AI Vehicle Service
+        </div>
+
+        <p>
+            Intelligent Vehicle Health & Service Management
+        </p>
+
+        <div class="footer-line"></div>
+
+        <small>
+            © 2026 AI Vehicle Service. All rights reserved.
+        </small>
+
+    </footer>
+
+
+    <!-- ===================================================== -->
+    <!--             AI VEHICLE HEALTH CHECK MODAL             -->
+    <!-- ===================================================== -->
+
+    <div id="healthModal" class="health-modal">
+
+        <div class="health-modal-box">
+
+            <!-- CLOSE BUTTON -->
+
+            <button
+                class="health-close"
+                onclick="closeHealthCheck()"
+            >
+                &times;
+            </button>
+
+
+            <!-- ================= HEALTH HEADER ================= -->
+
+            <div class="health-header">
+
+                <div class="health-icon">
+                    🚗
+                </div>
+
+                <div>
+
+                    <span>
+                        AI VEHICLE ANALYSIS
+                    </span>
+
+                    <h2>
+                        Check Vehicle Health
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <p class="health-description">
+                Enter your vehicle details and let AI analyze
+                its current health and maintenance needs.
+            </p>
+
+
+            <!-- ================= HEALTH FORM ================= -->
+
+            <form
+                id="healthForm"
+                onsubmit="analyzeVehicle(event)"
+            >
+
+                <div class="health-form-grid">
+
+
+                    <!-- VEHICLE TYPE -->
+
+                    <div class="health-field">
+
+                        <label>
+                            Vehicle Type
+                        </label>
+
+                        <select
+                            id="vehicleType"
+                            required
+                        >
+
+                            <option value="">
+                                Select vehicle
+                            </option>
+
+                            <option value="car">
+                                🚗 Car
+                            </option>
+
+                            <option value="bike">
+                                🏍️ Bike
+                            </option>
+
+                            <option value="suv">
+                                🚙 SUV
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- FUEL TYPE -->
+
+                    <div class="health-field">
+
+                        <label>
+                            Fuel Type
+                        </label>
+
+                        <select
+                            id="fuelType"
+                            required
+                        >
+
+                            <option value="">
+                                Select fuel
+                            </option>
+
+                            <option value="petrol">
+                                Petrol
+                            </option>
+
+                            <option value="diesel">
+                                Diesel
+                            </option>
+
+                            <option value="cng">
+                                CNG
+                            </option>
+
+                            <option value="ev">
+                                Electric
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- VEHICLE AGE -->
+
+                    <div class="health-field">
+
+                        <label>
+                            Vehicle Age
+                        </label>
+
+                        <select
+                            id="vehicleAge"
+                            required
+                        >
+
+                            <option value="">
+                                Select age
+                            </option>
+
+                            <option value="0-2">
+                                0–2 Years
+                            </option>
+
+                            <option value="3-5">
+                                3–5 Years
+                            </option>
+
+                            <option value="6-10">
+                                6–10 Years
+                            </option>
+
+                            <option value="10+">
+                                10+ Years
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- KILOMETERS -->
+
+                    <div class="health-field">
+
+                        <label>
+                            Kilometers Driven
+                        </label>
+
+                        <input
+                            type="number"
+                            id="kilometers"
+                            placeholder="e.g. 45000"
+                            min="0"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- LAST SERVICE -->
+
+                    <div class="health-field">
+
+                        <label>
+                            Last Service
+                        </label>
+
+                        <select
+                            id="lastService"
+                            required
+                        >
+
+                            <option value="">
+                                Select
+                            </option>
+
+                            <option value="less3">
+                                Less than 3 months
+                            </option>
+
+                            <option value="3-6">
+                                3–6 months ago
+                            </option>
+
+                            <option value="6-12">
+                                6–12 months ago
+                            </option>
+
+                            <option value="12+">
+                                More than 1 year ago
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- CURRENT ISSUE -->
+
+                    <div class="health-field">
+
+                        <label>
+                            Current Issue
+                        </label>
+
+                        <select
+                            id="vehicleIssue"
+                            required
+                        >
+
+                            <option value="">
+                                Select issue
+                            </option>
+
+                            <option value="none">
+                                No issue
+                            </option>
+
+                            <option value="engine">
+                                Engine problem
+                            </option>
+
+                            <option value="brake">
+                                Brake issue
+                            </option>
+
+                            <option value="battery">
+                                Battery issue
+                            </option>
+
+                            <option value="tyre">
+                                Tyre problem
+                            </option>
+
+                            <option value="noise">
+                                Unusual noise
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= ANALYZE BUTTON ================= -->
+
+                <button
+                    type="submit"
+                    class="analyze-btn"
+                >
+
+                    <span>✨</span>
+
+                    Analyze Vehicle
+
+                    <span>→</span>
+
+                </button>
+
+            </form>
+
+
+            <!-- ================================================= -->
+            <!--              HEALTH RESULT DASHBOARD              -->
+            <!-- ================================================= -->
+
+            <div
+                id="healthResult"
+                class="health-result"
+            >
+
+                <!-- ================= RESULT TOP ================= -->
+
+                <div class="result-top">
+
+                    <div>
+
+                        <span>
+                            AI HEALTH REPORT
+                        </span>
+
+                        <h2>
+                            Vehicle Health Result
+                        </h2>
+
+                    </div>
+
+
+                    <!-- HEALTH SCORE -->
+
+                    <div class="health-score">
+
+                        <strong id="healthScore">
+                            85
+                        </strong>
+
+                        <span>
+                            /100
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= HEALTH STATUS ================= -->
+
+                <div
+                    class="health-status"
+                    id="healthStatus"
+                >
+                    🟢 Vehicle is in Good Condition
+                </div>
+
+
+                <!-- ================= COMPONENT HEALTH ================= -->
+
+                <div class="health-check-grid">
+
+
+                    <!-- ENGINE -->
+
+                    <div class="health-check-card">
+
+                        <span>
+                            🔧
+                        </span>
+
+                        <div>
+
+                            <h4>
+                                Engine
+                            </h4>
+
+                            <p id="engineHealth">
+                                Good
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BATTERY -->
+
+                    <div class="health-check-card">
+
+                        <span>
+                            🔋
+                        </span>
+
+                        <div>
+
+                            <h4>
+                                Battery
+                            </h4>
+
+                            <p id="batteryHealth">
+                                Good
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TYRES -->
+
+                    <div class="health-check-card">
+
+                        <span>
+                            🛞
+                        </span>
+
+                        <div>
+
+                            <h4>
+                                Tyres
+                            </h4>
+
+                            <p id="tyreHealth">
+                                Good
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BRAKES -->
+
+                    <div class="health-check-card">
+
+                        <span>
+                            🛑
+                        </span>
+
+                        <div>
+
+                            <h4>
+                                Brakes
+                            </h4>
+
+                            <p id="brakeHealth">
+                                Good
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= MAINTENANCE STATUS ================= -->
+
+                <div class="maintenance-box">
+
+                    <span>
+                        📅
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            Maintenance Status
+                        </h3>
+
+                        <p id="maintenanceStatus">
+                            Regular maintenance recommended.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= AI RECOMMENDATION ================= -->
+
+                <div class="ai-recommendation">
+
+                    <span>
+                        🤖
+                    </span>
+
+                    <div>
+
+                        <h3>
+                            AI Recommendation
+                        </h3>
+
+                        <p id="aiRecommendation">
+                            Your vehicle is performing well.
+                            Continue regular servicing and
+                            monitoring.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= NEW ANALYSIS ================= -->
+
+                <button
+                    type="button"
+                    class="new-analysis-btn"
+                    onclick="newVehicleAnalysis()"
+                >
+                    ← Analyze Another Vehicle
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+<!--          PREDICTIVE MAINTENANCE MODAL                -->
+<!-- ===================================================== -->
+
+<div
+    id="maintenanceModal"
+    class="maintenance-modal"
+>
+
+    <div class="maintenance-modal-box">
+
+
+        <!-- ================= CLOSE BUTTON ================= -->
+
+        <button
+            class="maintenance-close"
+            onclick="closeMaintenanceCheck()"
+        >
+            &times;
+        </button>
+
+
+        <!-- ================= HEADER ================= -->
+
+        <div class="maintenance-header">
+
+            <div class="maintenance-icon">
+                🔧
+            </div>
+
+            <div>
+
+                <span>
+                    AI PREDICTIVE MAINTENANCE
+                </span>
+
+                <h2>
+                    Predict Your Next Service
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= DESCRIPTION ================= -->
+
+        <p class="maintenance-description">
+
+            Enter your vehicle details and AI will analyze
+            your maintenance schedule and upcoming service needs.
+
+        </p>
+
+
+        <!-- ================================================= -->
+        <!--              MAINTENANCE FORM                     -->
+        <!-- ================================================= -->
+
+        <form
+            id="maintenanceForm"
+            onsubmit="analyzeMaintenance(event)"
+        >
+
+            <div class="maintenance-form-grid">
+
+
+                <!-- ================= VEHICLE TYPE ================= -->
+
+                <div class="maintenance-field">
+
+                    <label>
+                        Vehicle Type
+                    </label>
+
+                    <select
+                        id="maintenanceVehicleType"
+                        required
+                    >
+
+                        <option value="">
+                            Select vehicle
+                        </option>
+
+                        <option value="car">
+                            🚗 Car
+                        </option>
+
+                        <option value="bike">
+                            🏍️ Bike
+                        </option>
+
+                        <option value="suv">
+                            🚙 SUV
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- ================= VEHICLE AGE ================= -->
+
+                <div class="maintenance-field">
+
+                    <label>
+                        Vehicle Age
+                    </label>
+
+                    <select
+                        id="maintenanceVehicleAge"
+                        required
+                    >
+
+                        <option value="">
+                            Select age
+                        </option>
+
+                        <option value="0-2">
+                            0–2 Years
+                        </option>
+
+                        <option value="3-5">
+                            3–5 Years
+                        </option>
+
+                        <option value="6-10">
+                            6–10 Years
+                        </option>
+
+                        <option value="10+">
+                            10+ Years
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- ================= KILOMETERS ================= -->
+
+                <div class="maintenance-field">
+
+                    <label>
+                        Kilometers Driven
+                    </label>
+
+                    <input
+                        type="number"
+                        id="maintenanceKilometers"
+                        placeholder="e.g. 45000"
+                        min="0"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- ================= LAST SERVICE ================= -->
+
+                <div class="maintenance-field">
+
+                    <label>
+                        Last Service
+                    </label>
+
+                    <select
+                        id="maintenanceLastService"
+                        required
+                    >
+
+                        <option value="">
+                            Select
+                        </option>
+
+                        <option value="less3">
+                            Less than 3 months
+                        </option>
+
+                        <option value="3-6">
+                            3–6 months ago
+                        </option>
+
+                        <option value="6-12">
+                            6–12 months ago
+                        </option>
+
+                        <option value="12+">
+                            More than 1 year ago
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- ================= SERVICE TYPE ================= -->
+
+                <div class="maintenance-field">
+
+                    <label>
+                        Last Service Type
+                    </label>
+
+                    <select
+                        id="lastServiceType"
+                        required
+                    >
+
+                        <option value="">
+                            Select service
+                        </option>
+
+                        <option value="basic">
+                            Basic Service
+                        </option>
+
+                        <option value="full">
+                            Full Service
+                        </option>
+
+                        <option value="oil">
+                            Oil Change
+                        </option>
+
+                        <option value="major">
+                            Major Service
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- ================= CURRENT ISSUE ================= -->
+
+                <div class="maintenance-field">
+
+                    <label>
+                        Current Vehicle Condition
+                    </label>
+
+                    <select
+                        id="maintenanceIssue"
+                        required
+                    >
+
+                        <option value="">
+                            Select condition
+                        </option>
+
+                        <option value="normal">
+                            🟢 Normal
+                        </option>
+
+                        <option value="noise">
+                            🟡 Unusual Noise
+                        </option>
+
+                        <option value="performance">
+                            🟡 Performance Issue
+                        </option>
+
+                        <option value="warning">
+                            🔴 Warning Light
+                        </option>
+
+                        <option value="multiple">
+                            🔴 Multiple Issues
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= ANALYZE BUTTON ================= -->
+
+            <button
+                type="submit"
+                class="maintenance-analyze-btn"
+            >
+
+                <span>🤖</span>
+
+                Predict Maintenance
+
+                <span>→</span>
+
+            </button>
+
+        </form>
+
+
+        <!-- ================================================= -->
+        <!--          MAINTENANCE RESULT DASHBOARD             -->
+        <!-- ================================================= -->
+
+        <div
+            id="maintenanceResult"
+            class="maintenance-result"
+        >
+
+
+            <!-- ================= RESULT HEADER ================= -->
+
+            <div class="maintenance-result-top">
+
+                <div>
+
+                    <span>
+                        AI MAINTENANCE REPORT
+                    </span>
+
+                    <h2>
+                        Maintenance Prediction
+                    </h2>
+
+                </div>
+
+
+                <!-- PRIORITY -->
+
+                <div
+                    class="maintenance-priority"
+                    id="maintenancePriority"
+                >
+
+                    NORMAL
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= SERVICE STATUS ================= -->
+
+            <div
+                class="maintenance-status"
+                id="maintenanceStatus"
+            >
+
+                🟢 Maintenance schedule looks normal.
+
+            </div>
+
+
+            <!-- ================= PREDICTION GRID ================= -->
+
+            <div class="maintenance-result-grid">
+
+
+                <!-- NEXT SERVICE -->
+
+                <div class="maintenance-result-card">
+
+                    <div class="result-card-icon">
+                        📅
+                    </div>
+
+                    <div>
+
+                        <span>
+                            NEXT SERVICE
+                        </span>
+
+                        <h3 id="nextService">
+                            Within 3 Months
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ENGINE OIL -->
+
+                <div class="maintenance-result-card">
+
+                    <div class="result-card-icon">
+                        🛢️
+                    </div>
+
+                    <div>
+
+                        <span>
+                            ENGINE OIL
+                        </span>
+
+                        <h3 id="oilStatus">
+                            Check Recommended
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TYRES -->
+
+                <div class="maintenance-result-card">
+
+                    <div class="result-card-icon">
+                        🛞
+                    </div>
+
+                    <div>
+
+                        <span>
+                            TYRE INSPECTION
+                        </span>
+
+                        <h3 id="tyreStatus">
+                            Recommended
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- BATTERY -->
+
+                <div class="maintenance-result-card">
+
+                    <div class="result-card-icon">
+                        🔋
+                    </div>
+
+                    <div>
+
+                        <span>
+                            BATTERY
+                        </span>
+
+                        <h3 id="batteryStatus">
+                            Good
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= SERVICE RECOMMENDATIONS ================= -->
+
+            <div class="maintenance-recommendations">
+
+                <div class="recommendation-title">
+
+                    <span>
+                        🔧
+                    </span>
+
+                    <h3>
+                        Recommended Maintenance
+                    </h3>
+
+                </div>
+
+
+                <ul id="maintenanceList">
+
+                    <li>
+                        Regular vehicle inspection
+                    </li>
+
+                    <li>
+                        Engine oil check
+                    </li>
+
+                    <li>
+                        Tyre pressure inspection
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- ================= AI RECOMMENDATION ================= -->
+
+            <div class="maintenance-ai-box">
+
+                <span>
+                    🤖
+                </span>
+
+                <div>
+
+                    <h3>
+                        AI Recommendation
+                    </h3>
+
+                    <p id="maintenanceAIRecommendation">
+
+                        Continue regular servicing and
+                        monitor your vehicle condition.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= ANALYZE AGAIN ================= -->
+
+            <button
+                type="button"
+                class="maintenance-again-btn"
+                onclick="newMaintenanceAnalysis()"
+            >
+
+                ← Analyze Another Vehicle
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ===================================================== -->
+<!--             AI DAMAGE DETECTION MODAL                 -->
+<!-- ===================================================== -->
+
+<div
+    id="damageModal"
+    class="damage-modal"
+>
+
+    <div class="damage-modal-box">
+
+        <!-- CLOSE -->
+
+        <button
+            class="damage-close"
+            onclick="closeDamageDetection()"
+        >
+            &times;
+        </button>
+
+
+        <!-- HEADER -->
+
+        <div class="damage-header">
+
+            <div class="damage-icon">
+                📷
+            </div>
+
+            <div>
+
+                <span>
+                    AI DAMAGE DETECTION
+                </span>
+
+                <h2>
+                    Analyze Vehicle Damage
+                </h2>
+
+            </div>
+
+        </div>
+
+
+        <!-- DESCRIPTION -->
+
+        <p class="damage-description">
+
+            Upload a clear photo of your vehicle and
+            analyze visible damage using AI-assisted
+            image analysis.
+
+        </p>
+
+
+        <!-- ================= UPLOAD AREA ================= -->
+
+        <div
+            class="damage-upload-area"
+            id="damageUploadArea"
+        >
+
+            <div class="upload-icon">
+                📸
+            </div>
+
+            <h3>
+                Upload Vehicle Image
+            </h3>
+
+            <p>
+                JPG, JPEG or PNG
+            </p>
+
+            <label
+                for="vehicleDamageImage"
+                class="upload-btn"
+            >
+                Choose Image
+            </label>
+
+            <input
+                type="file"
+                id="vehicleDamageImage"
+                accept="image/png,image/jpeg,image/jpg"
+                hidden
+            >
+
+        </div>
+
+
+        <!-- ================= IMAGE PREVIEW ================= -->
+
+        <div
+            class="damage-preview"
+            id="damagePreview"
+        >
+
+            <img
+                id="damagePreviewImage"
+                src=""
+                alt="Vehicle Preview"
+            >
+
+            <button
+                type="button"
+                class="remove-image-btn"
+                onclick="removeDamageImage()"
+            >
+                Remove Image
+            </button>
+
+        </div>
+
+
+        <!-- ================= ANALYZE BUTTON ================= -->
+
+        <button
+            type="button"
+            class="damage-analyze-btn"
+            id="damageAnalyzeBtn"
+            onclick="analyzeDamage()"
+            disabled
+        >
+
+            <span>🤖</span>
+
+            Analyze Damage
+
+            <span>→</span>
+
+        </button>
+
+
+        <!-- ================================================= -->
+        <!--              DAMAGE RESULT DASHBOARD              -->
+        <!-- ================================================= -->
+
+        <div
+            id="damageResult"
+            class="damage-result"
+        >
+
+            <!-- RESULT HEADER -->
+
+            <div class="damage-result-top">
+
+                <div>
+
+                    <span>
+                        AI DAMAGE REPORT
+                    </span>
+
+                    <h2>
+                        Damage Analysis
+                    </h2>
+
+                </div>
+
+                <div
+                    class="damage-severity"
+                    id="damageSeverity"
+                >
+                    LOW
+                </div>
+
+            </div>
+
+
+            <!-- DAMAGE STATUS -->
+
+            <div
+                class="damage-status"
+                id="damageStatus"
+            >
+                🟢 No major damage detected
+            </div>
+
+
+            <!-- DAMAGE DETAILS -->
+
+            <div class="damage-result-grid">
+
+
+                <!-- DAMAGED AREA -->
+
+                <div class="damage-result-card">
+
+                    <div class="damage-card-icon">
+                        🚗
+                    </div>
+
+                    <div>
+
+                        <span>
+                            DAMAGED AREA
+                        </span>
+
+                        <h3 id="damagedArea">
+                            Front Area
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DAMAGE TYPE -->
+
+                <div class="damage-result-card">
+
+                    <div class="damage-card-icon">
+                        🔍
+                    </div>
+
+                    <div>
+
+                        <span>
+                            DAMAGE TYPE
+                        </span>
+
+                        <h3 id="damageType">
+                            Minor Scratch
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SEVERITY -->
+
+                <div class="damage-result-card">
+
+                    <div class="damage-card-icon">
+                        ⚠️
+                    </div>
+
+                    <div>
+
+                        <span>
+                            SEVERITY
+                        </span>
+
+                        <h3 id="damageLevel">
+                            Low
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REPAIR -->
+
+                <div class="damage-result-card">
+
+                    <div class="damage-card-icon">
+                        🔧
+                    </div>
+
+                    <div>
+
+                        <span>
+                            REPAIR
+                        </span>
+
+                        <h3 id="repairRecommendation">
+                            Cosmetic Repair
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- RECOMMENDATION -->
+
+            <div class="damage-recommendation">
+
+                <div class="damage-recommendation-title">
+
+                    <span>
+                        🔧
+                    </span>
+
+                    <h3>
+                        Recommended Action
+                    </h3>
+
+                </div>
+
+                <p id="damageAction">
+
+                    Get the affected area inspected
+                    by a qualified service professional.
+
+                </p>
+
+            </div>
+
+
+            <!-- AI RECOMMENDATION -->
+
+            <div class="damage-ai-box">
+
+                <span>
+                    🤖
+                </span>
+
+                <div>
+
+                    <h3>
+                        AI Recommendation
+                    </h3>
+
+                    <p id="damageAIRecommendation">
+
+                        Upload a clear image for more
+                        detailed damage analysis.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ANALYZE AGAIN -->
+
+            <button
+                type="button"
+                class="damage-again-btn"
+                onclick="newDamageAnalysis()"
+            >
+                ← Analyze Another Image
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ===================================================== -->
+<!--                 SERVICE BOOKING MODAL                 -->
+<!-- ===================================================== -->
+
+<div id="bookingModal" class="booking-modal">
+
+    <div class="booking-modal-box">
+
+        <button
+            class="booking-close"
+            onclick="closeServiceBooking()"
+        >
+            &times;
+        </button>
+
+        <div class="booking-header">
+
+            <div class="booking-icon">
+                📅
+            </div>
+
+            <div>
+                <span>AI SERVICE BOOKING</span>
+
+                <h2>Book Vehicle Service</h2>
+            </div>
+
+        </div>
+
+        <p class="booking-description">
+            Select your vehicle, service type and preferred
+            date to schedule your vehicle service.
+        </p>
+
+
+        <!-- Booking Form -->
+
+        <form
+            id="bookingForm"
+            onsubmit="submitServiceBooking(event)"
+        >
+
+            <div class="booking-form-grid">
+
+                <div class="booking-field">
+
+                    <label>Vehicle Type</label>
+
+                    <select id="bookingVehicleType" required>
+
+                        <option value="">
+                            Select vehicle
+                        </option>
+
+                        <option value="car">
+                            🚗 Car
+                        </option>
+
+                        <option value="bike">
+                            🏍️ Bike
+                        </option>
+
+                        <option value="suv">
+                            🚙 SUV
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="booking-field">
+
+                    <label>Vehicle Number</label>
+
+                    <input
+                        type="text"
+                        id="vehicleNumber"
+                        placeholder="e.g. MP04AB1234"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="booking-field">
+
+                    <label>Service Type</label>
+
+                    <select id="bookingServiceType" required>
+
+                        <option value="">
+                            Select service
+                        </option>
+
+                        <option value="general">
+                            🔧 General Service
+                        </option>
+
+                        <option value="oil">
+                            🛢️ Oil Change
+                        </option>
+
+                        <option value="brake">
+                            🛑 Brake Service
+                        </option>
+
+                        <option value="tyre">
+                            🛞 Tyre Service
+                        </option>
+
+                        <option value="full">
+                            🚗 Full Vehicle Service
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="booking-field">
+
+                    <label>Preferred Date</label>
+
+                    <input
+                        type="date"
+                        id="bookingDate"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="booking-field">
+
+                    <label>Preferred Time</label>
+
+                    <select id="bookingTime" required>
+
+                        <option value="">
+                            Select time
+                        </option>
+
+                        <option value="09:00">
+                            09:00 AM
+                        </option>
+
+                        <option value="10:00">
+                            10:00 AM
+                        </option>
+
+                        <option value="11:00">
+                            11:00 AM
+                        </option>
+
+                        <option value="12:00">
+                            12:00 PM
+                        </option>
+
+                        <option value="14:00">
+                            02:00 PM
+                        </option>
+
+                        <option value="15:00">
+                            03:00 PM
+                        </option>
+
+                        <option value="16:00">
+                            04:00 PM
+                        </option>
+
+                        <option value="17:00">
+                            05:00 PM
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="booking-field">
+
+                    <label>Service Center</label>
+
+                    <select id="bookingCenter" required>
+
+                        <option value="">
+                            Select service center
+                        </option>
+
+                        <option value="bhopal">
+                            AI Auto Care - Bhopal
+                        </option>
+
+                        <option value="indore">
+                            AI Auto Care - Indore
+                        </option>
+
+                        <option value="gwalior">
+                            AI Auto Care - Gwalior
+                        </option>
+
+                        <option value="jabalpur">
+                            AI Auto Care - Jabalpur
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="booking-notes">
+
+                <label>Additional Notes</label>
+
+                <textarea
+                    id="bookingNotes"
+                    rows="3"
+                    placeholder="Describe any vehicle issue..."
+                ></textarea>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="booking-submit-btn"
+            >
+
+                <span>📅</span>
+
+                Confirm Service Booking
+
+                <span>→</span>
+
+            </button>
+
+        </form>
+
+
+        <!-- Booking Result -->
+
+        <div
+            id="bookingResult"
+            class="booking-result"
+        >
+
+            <div class="booking-success-icon">
+                ✓
+            </div>
+
+            <span class="booking-success-label">
+                BOOKING CONFIRMED
+            </span>
+
+            <h2>
+                Service Booked Successfully!
+            </h2>
+
+            <p>
+                Your vehicle service appointment has been
+                scheduled successfully.
+            </p>
+
+
+            <div class="booking-summary">
+
+                <div>
+                    <span>Vehicle</span>
+                    <strong id="confirmedVehicle">
+                        -
+                    </strong>
+                </div>
+
+                <div>
+                    <span>Service</span>
+                    <strong id="confirmedService">
+                        -
+                    </strong>
+                </div>
+
+                <div>
+                    <span>Date</span>
+                    <strong id="confirmedDate">
+                        -
+                    </strong>
+                </div>
+
+                <div>
+                    <span>Time</span>
+                    <strong id="confirmedTime">
+                        -
+                    </strong>
+                </div>
+
+                <div>
+                    <span>Service Center</span>
+                    <strong id="confirmedCenter">
+                        -
+                    </strong>
+                </div>
+
+            </div>
+
+
+            <div class="booking-id">
+
+                <span>Booking ID</span>
+
+                <strong id="bookingId">
+                    AVS-000000
+                </strong>
+
+            </div>
+
+
+            <button
+                type="button"
+                class="new-booking-btn"
+                onclick="newServiceBooking()"
+            >
+                ← Book Another Service
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+    <!-- ===================================================== -->
+    <!--                     LOGIN MODAL                       -->
+    <!-- ===================================================== -->
+
+    <div
+        class="modal"
+        id="loginModal"
+    >
+
+        <div class="modal-box">
+
+            <button
+                class="close-btn"
+                onclick="closeModal()"
+            >
+                ×
+            </button>
+
+
+            <div class="modal-icon">
+                🚗
+            </div>
+
+
+            <h2>
+                Welcome Back
+            </h2>
+
+
+            <p>
+                Login to continue your vehicle journey.
+            </p>
+
+
+            <input
+                type="email"
+                placeholder="Email or Mobile Number"
+            >
+
+
+            <input
+                type="password"
+                placeholder="Password"
+            >
+
+
+            <button class="modal-submit">
+                Login
+            </button>
+
+
+            <p class="modal-footer">
+
+                Don't have an account?
+
+                <span onclick="openRegister()">
+                    Register
+                </span>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ===================================================== -->
+    <!--                    REGISTER MODAL                     -->
+    <!-- ===================================================== -->
+
+    <div
+        class="modal"
+        id="registerModal"
+    >
+
+        <div class="modal-box">
+
+            <button
+                class="close-btn"
+                onclick="closeModal()"
+            >
+                ×
+            </button>
+
+
+            <div class="modal-icon">
+                👤
+            </div>
+
+
+            <h2>
+                Create Account
+            </h2>
+
+
+            <p>
+                Start managing your vehicle smarter.
+            </p>
+
+
+            <input
+                type="text"
+                placeholder="Full Name"
+            >
+
+
+            <input
+                type="email"
+                placeholder="Email"
+            >
+
+
+            <input
+                type="password"
+                placeholder="Password"
+            >
+
+
+            <button class="modal-submit">
+                Create Account
+            </button>
+
+
+            <p class="modal-footer">
+
+                Already have an account?
+
+                <span onclick="openLogin()">
+                    Login
+                </span>
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+    
+    <script>
+
+    // Tumhara existing JavaScript code
+    // ...
+    // ...
+
+    async function testBackendConnection() {
+        try {
+            const response = await fetch("http://127.0.0.1:8000/");
+
+            const data = await response.json();
+
+            console.log("Backend Response:", data);
+        } catch (error) {
+            console.error("Backend Connection Failed:", error);
+        }
+    }
+
+
+    async function saveVehicleToBackend() {
+    const vehicleData = {
+        vehicle_type: document.getElementById("vehicleType").value,
+        fuel_type: document.getElementById("fuelType").value,
+        vehicle_age: document.getElementById("vehicleAge").value,
+        kilometers: parseInt(document.getElementById("kilometers").value),
+        last_service: document.getElementById("lastService").value,
+        vehicle_issue: document.getElementById("vehicleIssue").value
+    };
+
+    try {
+        const response = await fetch("http://127.0.0.1:8000/vehicles", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(vehicleData)
+        });
+
+        const data = await response.json();
+
+        console.log("Vehicle Saved:", data);
+
+        return data;
+
+    } catch (error) {
+        console.error("Vehicle Save Failed:", error);
+    }
+}
+
+</script>
+
+</body>
+
+</html>
